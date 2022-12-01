@@ -14,8 +14,8 @@ dotenvExpand(require('dotenv').config({
 var public_path = 'public';
 
 
-mix.js('Resources/js/app.js', 'js');
-mix.sass('Resources/scss/app.scss', 'css');
+mix.js('resources/js/app.js', 'js');
+mix.sass('resources/sass/app.scss', 'css');
 
 mix.setPublicPath(public_path);
 
