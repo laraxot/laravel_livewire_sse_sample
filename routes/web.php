@@ -20,3 +20,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::group(
+    [
+        'namespace' => 'App\Http\Controllers',
+        'prefix' => 'sse'
+    ],
+    static function () {
+
+        Route::get('sse_stream', 'SSEController@stream')->name('__sse_stream__');
+    }
+);

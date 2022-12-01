@@ -31,5 +31,29 @@ https://developer.mozilla.org/en-US/docs/Web/API/EventSource
 https://github.com/mdn/dom-examples/blob/main/server-sent-events/sse.php
 
 
+https://github.com/hhxsv5/php-sse/blob/master/examples/sse.php
+
+https://laravel-news.com/livewire-v3-features
+
+https://dev.to/mesadhan/event-stream-server-send-events-5afk
+
+https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
+
+https://web.dev/eventsource-basics/
+
+
+https://github.com/sarfraznawaz2005/laravel-sse
+Package sarfraznawaz2005/laravel-sse has requirements incompatible with your PHP version, PHP extensions and Composer version:
+    - sarfraznawaz2005/laravel-sse 2.0.0 requires php ^7.0 which does not match your installed version 8.0.19.
+
+
+
+
+
+
+
+
+
+
 
 
