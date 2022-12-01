@@ -6,6 +6,7 @@
         A simple primary alert—check it out!
     </div>
 
+    <livewire:broad />
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
@@ -31,4 +32,23 @@
             </div>
         </div>
     </div>
+
+    @push('scripts')
+        <script>
+            var es = new EventSource("{{ route('__sse_stream__') }}");
+            console.log(es);
+            es.addEventListener("message", function(e) {
+                var data = JSON.parse(e.data);
+                //alert(data.message);
+                //console.log(e);
+                //console.log('presooo');
+                Livewire.emit('eventSourceReceived', data);
+            }, false);
+        </script>
+    @endpush
+
+
+    {{--
+    @include('sse')
+    --}}
 @endsection
