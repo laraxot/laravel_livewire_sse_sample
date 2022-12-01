@@ -35,15 +35,16 @@
 
     @push('scripts')
         <script>
-            var es = new EventSource("{{ route('__sse_stream__') }}");
-            console.log(es);
-            es.addEventListener("message", function(e) {
-                var data = JSON.parse(e.data);
-                //alert(data.message);
-                //console.log(e);
-                //console.log('presooo');
-                Livewire.emit('eventSourceReceived', data);
-            }, false);
+            /*    var es = new EventSource("{{ route('__sse_stream__') }}");
+                    console.log(es);
+                    es.addEventListener("message", function(e) {
+                        var data = JSON.parse(e.data);
+                        //alert(data.message);
+                        //console.log(e);
+                        //console.log('presooo');
+                        Livewire.emit('eventSourceReceived', data);
+                    }, false);
+                    */
         </script>
     @endpush
 

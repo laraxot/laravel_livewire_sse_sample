@@ -6,6 +6,7 @@ return [
     'enabled' => env('SSE_ENABLED', true),
 
     // polling interval in seconds between requests
+    //'interval' => env('SSE_INTERVAL', 15),
     'interval' => env('SSE_INTERVAL', 15),
 
     // append logged user id in SSE response
